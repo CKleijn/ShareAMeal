@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="vega_switch"
+        android:summary="@string/filter_vega"
+        android:title="@string/vega_title" />
+
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="vegan_switch"
+        android:summary="@string/filter_vegan"
+        android:title="@string/vegan_title" />
+
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="to_take_home_switch"
+        android:summary="@string/filter_to_take_home"
+        android:title="@string/to_take_home_title" />
+</PreferenceScreen>

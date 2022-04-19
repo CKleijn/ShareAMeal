@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">Deel een Maaltijd</string>
+<string name="results">resultaten</string>
+<string name="served_on">Geserveerd op:</string>
+<string name="filter_vega">Filter alle maaltijden op vegetarisch</string>
+<string name="filter_vegan">Filter alle maaltijden op veganistisch</string>
+<string name="filter_to_take_home">Filter alle maaltijden op meenemen</string>
+<string name="filter">Filter</string>
+<string name="vega_title">Vegetarisch</string>
+<string name="vegan_title">Veganistisch</string>
+<string name="to_take_home_title">Meenemen</string>
+<string name="vega_check">Vegetarisch ✔️</string>
+<string name="vega_false">Vegetarisch ❌</string>
+<string name="vegan_check">Veganistisch ✔️</string>
+<string name="vegan_false">Veganistisch ❌</string>
+<string name="sign_up">Aanmelden!</string>
+<string name="created_on">Gemaakt op:</string>
+<string name="updated_on">Bijgewerkt op:</string>
+<string name="max_participants">Maximaal aantal deelnemers:</string>
+<string name="active_check">Actief ✔️</string>
+<string name="active_false">Actief ❌</string>
+<string name="to_take_home_check">Meenemen ✔️</string>
+<string name="to_take_home_false">Meenemen ❌</string>
+<string name="allergens">Geen allergieën</string>
+<string name="allergenic_info">Allergieën info:</string>
+<string name="signup_participants">Ingeschreven deelnemer(s):</string>
+</resources>

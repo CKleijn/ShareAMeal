@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/meal_image"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <TextView
+                android:id="@+id/meal_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/meal_image"
+                app:layout_constraintTop_toBottomOf="@+id/meal_image" />
+
+            <TextView
+                android:id="@+id/meal_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/meal_name"
+                app:layout_constraintTop_toTopOf="@+id/meal_cook_name" />
+
+            <TextView
+                android:id="@+id/meal_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/meal_name"
+                app:layout_constraintStart_toStartOf="@+id/meal_name"
+                app:layout_constraintTop_toBottomOf="@+id/meal_name" />
+
+            <TextView
+                android:id="@+id/meal_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/meal_description"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/meal_description"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerview" />
+
+            <TextView
+                android:id="@+id/meal_create_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/meal_date"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/meal_date"
+                app:layout_constraintTop_toBottomOf="@+id/meal_date" />
+
+            <TextView
+                android:id="@+id/meal_update_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/meal_date"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/meal_date"
+                app:layout_constraintTop_toBottomOf="@+id/meal_create_date" />
+
+            <Button
+                android:id="@+id/meal_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/sign_up"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/meal_cook_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_constraintEnd_toStartOf="@+id/meal_price"
+                app:layout_constraintStart_toEndOf="@+id/meal_image"
+                app:layout_constraintTop_toTopOf="@+id/meal_image" />
+
+            <TextView
+                android:id="@+id/meal_cook_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                app:layout_constraintEnd_toEndOf="@+id/meal_cook_name"
+                app:layout_constraintStart_toStartOf="@+id/meal_cook_name"
+                app:layout_constraintTop_toBottomOf="@+id/meal_cook_name" />
+
+            <TextView
+                android:id="@+id/meal_cook_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/meal_cook_email"
+                app:layout_constraintStart_toStartOf="@+id/meal_cook_email"
+                app:layout_constraintTop_toBottomOf="@+id/meal_cook_email" />
+
+            <TextView
+                android:id="@+id/meal_vega"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/meal_cook_phone"
+                app:layout_constraintTop_toBottomOf="@+id/meal_address" />
+
+            <TextView
+                android:id="@+id/meal_take_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="275dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/meal_name"
+                app:layout_constraintTop_toTopOf="@+id/meal_vega" />
+
+            <TextView
+                android:id="@+id/meal_vegan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/meal_vega"
+                app:layout_constraintTop_toBottomOf="@+id/meal_vega" />
+
+            <TextView
+                android:id="@+id/meal_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="275dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/meal_name"
+                app:layout_constraintTop_toTopOf="@+id/meal_vegan" />
+
+            <TextView
+                android:id="@+id/meal_max_participants"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/meal_date"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/meal_date"
+                app:layout_constraintTop_toBottomOf="@+id/meal_allergens" />
+
+            <TextView
+                android:id="@+id/meal_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/meal_cook_phone"
+                app:layout_constraintStart_toStartOf="@+id/meal_cook_phone"
+                app:layout_constraintTop_toBottomOf="@+id/meal_cook_phone" />
+
+            <TextView
+                android:id="@+id/meal_allergens"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/meal_description"
+                app:layout_constraintStart_toStartOf="@+id/meal_description"
+                app:layout_constraintTop_toBottomOf="@+id/meal_description" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/meal_max_participants"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/meal_max_participants"
+                app:layout_constraintTop_toBottomOf="@+id/meal_current_participants" />
+
+            <TextView
+                android:id="@+id/meal_current_participants"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/signup_participants"
+                android:textAlignment="textStart"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/meal_max_participants"
+                app:layout_constraintStart_toStartOf="@+id/meal_max_participants"
+                app:layout_constraintTop_toBottomOf="@+id/meal_max_participants" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

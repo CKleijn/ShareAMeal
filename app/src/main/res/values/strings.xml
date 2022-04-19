@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Share A Meal</string>
+    <string name="results">results</string>
+    <string name="served_on">Served on:</string>
+    <string name="filter_vega">Filter all meals by vega</string>
+    <string name="filter_vegan">Filter all meals by vegan</string>
+    <string name="filter_to_take_home">Filter all meals by to take home</string>
+    <string name="filter">Filter</string>
+    <string name="vega_title">Vega</string>
+    <string name="vegan_title">Vegan</string>
+    <string name="to_take_home_title">To Take Home</string>
+    <string name="vega_check">Vega ✔️</string>
+    <string name="vega_false">Vega ❌</string>
+    <string name="vegan_check">Vegan ✔️</string>
+    <string name="vegan_false">Vegan ❌</string>
+    <string name="sign_up">Sign up!</string>
+    <string name="created_on">Created on:</string>
+    <string name="updated_on">Updated on:</string>
+    <string name="max_participants">Max amount of participants:</string>
+    <string name="active_check">Active ✔️</string>
+    <string name="active_false">Active ❌</string>
+    <string name="to_take_home_check">To Take Home ✔️</string>
+    <string name="to_take_home_false">To Take Home ❌</string>
+    <string name="allergens">No allergens</string>
+    <string name="allergenic_info">Allergenic info:</string>
+    <string name="signup_participants">Registered participant(s):</string>
+</resources>
